@@ -1,5 +1,9 @@
 package clase;
 
+/**
+ * @author jonib
+ *
+ */
 public class Contactos {
 
 	String nombre;

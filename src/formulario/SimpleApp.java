@@ -21,6 +21,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
 
+/**
+ * @author jonib
+ *
+ */
 public class SimpleApp extends JFrame {
 
 	/**
