@@ -23,8 +23,15 @@ import javax.swing.JTable;
 
 public class SimpleApp extends JFrame {
 
-	ArrayList Agenda = new ArrayList();
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+
+	ArrayList<Contactos> Agenda = new ArrayList<Contactos>();
+
 	
 	
 	private JPanel contentPane;
@@ -105,6 +112,8 @@ public class SimpleApp extends JFrame {
 		contentPane.add(txtTwitter);
 		txtTwitter.setColumns(10);
 		
+		
+
 		JButton btnGrabar = new JButton("GRABAR");
 		btnGrabar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -186,7 +195,12 @@ public class SimpleApp extends JFrame {
 		try {
 			M = (new DefaultTableModel(
 					null, new String[] {
-							"Nombre", "Apellido", "Telefono", "Twitter"}) {});
+							"Nombre", "Apellido", "Telefono", "Twitter"}) {
+
+								/**
+								 * 
+								 */
+								private static final long serialVersionUID = 1L;});
 
 			table.setModel(M);
 			
